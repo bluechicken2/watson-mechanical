@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Mechanical Ltd. | Heating, Cooling & Plumbing | Pembroke ON | 24/7 Emergency Service</title>
+    <meta name="description" content="Watson Mechanical Ltd. - Your trusted HVAC and plumbing experts since 2004. 24/7 emergency heating service in Pembroke, Petawawa & Ottawa Valley. BBB A+ Accredited. Call 613-732-1319">
+    <meta name="keywords" content="heating Pembroke, furnace repair Petawawa, HVAC Ottawa Valley, emergency heating, heat pump, plumbing Pembroke, air conditioning, Watson Mechanical">
+    <meta name="robots" content="index, follow">
+    <meta name="geo.region" content="CA-ON">
+    <meta name="geo.placename" content="Pembroke">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        ice: {
+                            50: '#E0F2FE',
+                            100: '#BAE6FD',
+                            200: '#7DD3FC',
+                            300: '#38BDF8',
+                        },
+                        silver: {
+                            100: '#F1F5F9',
+                            200: '#E2E8F0',
+                            300: '#CBD5E1',
+                            400: '#94A3B8',
+                            500: '#64748B',
+                        },
+                        frost: {
+                            600: '#0284C7',
+                            700: '#0369A1',
+                            800: '#075985',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Snowflake pattern background */
+        .snowflake-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 5v50M5 30h50M15 15l30 30M45 15L15 45' stroke='%23BAE6FD' stroke-width='0.5' fill='none' opacity='0.3'/%3E%3Ccircle cx='30' cy='30' r='3' fill='%23BAE6FD' opacity='0.2'/%3E%3C/svg%3E");
+        }
+        
+        /* Frost gradient */
+        .frost-gradient {
+            background: linear-gradient(135deg, #E0F2FE 0%, #BAE6FD 50%, #7DD3FC 100%);
+        }
+        
+        /* Ice shimmer effect */
+        .ice-shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+            animation: shimmer 3s infinite;
+        }
+        
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+        
+        /* Floating snowflakes */
+        .snowflake {
+            position: absolute;
+            color: white;
+            opacity: 0.6;
+            animation: fall linear infinite;
+            font-size: 1rem;
+        }
+        
+        @keyframes fall {
+            0% { transform: translateY(-10vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.6; }
+            90% { opacity: 0.6; }
+            100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+        }
+        
+        /* Pulse glow for emergency */
+        .emergency-pulse {
+            animation: emergency-glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes emergency-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(239, 68, 68, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(239, 68, 68, 0.8); }
+        }
+        
+        /* Heat wave effect */
+        .heat-glow {
+            animation: heat 2s ease-in-out infinite;
+        }
+        
+        @keyframes heat {
+            0%, 100% { filter: drop-shadow(0 0 8px rgba(249, 115, 22, 0.6)); }
+            50% { filter: drop-shadow(0 0 16px rgba(249, 115, 22, 0.9)); }
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Card hover */
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+        }
+    </style>
+    <!-- Schema.org LocalBusiness Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Watson Mechanical Ltd.",
+        "description": "Professional HVAC and plumbing services serving Pembroke and Ottawa Valley since 2004. 24/7 emergency heating service available.",
+        "url": "https://watsonmechanical.ca",
+        "telephone": ["+1-613-732-1319", "+1-613-401-1048"],
+        "email": "admin@watsonmechanical.ca",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "454 Biesenthal Rd",
+            "addressLocality": "Pembroke",
+            "addressRegion": "ON",
+            "postalCode": "K8A 6W7",
+            "addressCountry": "CA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "45.8264",
+            "longitude": "-77.1053"
+        },
+        "areaServed": ["Pembroke", "Petawawa", "Cobden", "Deep River", "Beachburg", "Chalk River"],
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "priceRange": "$$",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "reviewCount": "150"
+        },
+        "sameAs": [
+            "https://www.bbb.org/ca/on/pembroke/profile/hvac/watson-mechanical-ltd-0107-131712"
+        ]
+    }
+    </script>
+</head>
+<body class="font-sans text-slate-800 bg-white">
+    
+    <!-- Emergency Contact Bar -->
+    <div class="bg-gradient-to-r from-red-600 via-red-500 to-orange-500 text-white py-3 relative overflow-hidden">
+        <div class="absolute inset-0 ice-shimmer"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-2">
+                <div class="flex items-center gap-2">
+                    <span class="text-2xl">🔥</span>
+                    <span class="font-bold text-lg">24/7 EMERGENCY HEATING SERVICE</span>
+                    <span class="text-2xl">🔥</span>
+                </div>
+                <div class="flex items-center gap-4">
+                    <span class="text-sm md:text-base">Don't freeze! Call now:</span>
+                    <a href="tel:613-732-1319" class="bg-white text-red-600 px-4 py-1 rounded-full font-bold hover:bg-yellow-300 transition-colors emergency-pulse">
+                        613-732-1319
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Sticky Header -->
+    <header class="bg-white/95 backdrop-blur-sm shadow-lg sticky top-0 z-50 border-b border-ice-100">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-ice-100 to-ice-200 rounded-xl flex items-center justify-center shadow-md">
+                        <span class="text-2xl">❄️</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl md:text-2xl font-bold text-frost-700">Watson Mechanical</h1>
+                        <p class="text-xs text-silver-500">Est. 2004 • BBB A+ Accredited</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex items-center gap-6">
+                    <a href="#services" class="text-silver-500 hover:text-frost-600 transition-colors font-medium">Services</a>
+                    <a href="#areas" class="text-silver-500 hover:text-frost-600 transition-colors font-medium">Service Areas</a>
+                    <a href="#about" class="text-silver-500 hover:text-frost-600 transition-colors font-medium">About</a>
+                    <a href="tel:613-732-1319" class="bg-gradient-to-r from-frost-600 to-frost-700 text-white px-5 py-2 rounded-full font-semibold hover:from-frost-700 hover:to-frost-800 transition-all shadow-md">
+                        📞 Call Now
+                    </a>
+                </nav>
+                <button class="md:hidden text-frost-700" onclick="document.getElementById('mobileMenu').classList.toggle('hidden')">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobileMenu" class="hidden md:hidden mt-4 pb-4 border-t border-ice-100 pt-4">
+                <nav class="flex flex-col gap-3">
+                    <a href="#services" class="text-silver-500 hover:text-frost-600 font-medium">Services</a>
+                    <a href="#areas" class="text-silver-500 hover:text-frost-600 font-medium">Service Areas</a>
+                    <a href="#about" class="text-silver-500 hover:text-frost-600 font-medium">About</a>
+                    <a href="tel:613-732-1319" class="bg-frost-600 text-white px-4 py-2 rounded-full font-semibold text-center">
+                        📞 613-732-1319
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Hero Section - Winter Theme -->
+    <section class="relative min-h-[600px] md:min-h-[700px] bg-gradient-to-br from-slate-800 via-slate-700 to-frost-800 overflow-hidden">
+        <!-- Snowflake Background Pattern -->
+        <div class="absolute inset-0 snowflake-bg opacity-50"></div>
+        
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent"></div>
+        
+        <!-- Floating Snowflakes -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="snowflake" style="left: 10%; animation-duration: 15s; animation-delay: 0s;">❄</div>
+            <div class="snowflake" style="left: 20%; animation-duration: 12s; animation-delay: 2s;">❅</div>
+            <div class="snowflake" style="left: 35%; animation-duration: 18s; animation-delay: 4s;">❄</div>
+            <div class="snowflake" style="left: 50%; animation-duration: 14s; animation-delay: 1s;">❆</div>
+            <div class="snowflake" style="left: 65%; animation-duration: 16s; animation-delay: 3s;">❄</div>
+            <div class="snowflake" style="left: 80%; animation-duration: 13s; animation-delay: 5s;">❅</div>
+            <div class="snowflake" style="left: 90%; animation-duration: 17s; animation-delay: 2s;">❄</div>
+        </div>
+        
+        <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Urgency Badge -->
+                <div class="inline-flex items-center gap-2 bg-red-500/90 text-white px-6 py-2 rounded-full mb-6 emergency-pulse">
+                    <span class="text-xl">⚠️</span>
+                    <span class="font-bold">HEATING EMERGENCY? WE'RE AVAILABLE NOW!</span>
+                </div>
+                
+                <!-- Main Headline -->
+                <h2 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 leading-tight">
+                    Stay Warm
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-ice-100 to-ice-200">
+                        This Winter
+                    </span>
+                </h2>
+                
+                <!-- Subheadline -->
+                <p class="text-xl md:text-2xl text-silver-300 mb-8 max-w-2xl mx-auto">
+                    Don't wait until your furnace breaks! 
+                    <span class="text-ice-100 font-semibold">Fast, reliable heating service</span> 
+                    when you need it most.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+                    <a href="tel:613-732-1319" class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-xl heat-glow flex items-center justify-center gap-2">
+                        <span class="text-2xl">🔥</span>
+                        Emergency Heating: 613-732-1319
+                    </a>
+                    <a href="#services" class="w-full sm:w-auto bg-white/10 backdrop-blur border-2 border-ice-100 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2">
+                        <span>View Services</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <!-- Trust Stats -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-ice-100/30">
+                        <div class="text-3xl md:text-4xl font-bold text-ice-100">21+</div>
+                        <div class="text-silver-300 text-sm">Years Experience</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-ice-100/30">
+                        <div class="text-3xl md:text-4xl font-bold text-ice-100">A+</div>
+                        <div class="text-silver-300 text-sm">BBB Accredited</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-ice-100/30">
+                        <div class="text-3xl md:text-4xl font-bold text-ice-100">24/7</div>
+                        <div class="text-silver-300 text-sm">Emergency Service</div>
+                    </div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-ice-100/30">
+                        <div class="text-3xl md:text-4xl font-bold text-ice-100">6</div>
+                        <div class="text-silver-300 text-sm">Communities Served</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Ice Crystal Decorations -->
+        <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent"></div>
+    </section>
+    
+    <!-- Winter Warning Banner -->
+    <section class="bg-gradient-to-r from-ice-50 via-white to-ice-50 py-6 border-y border-ice-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
+                <span class="text-4xl">🥶</span>
+                <div>
+                    <p class="text-lg md:text-xl font-semibold text-slate-700">
+                        <span class="text-frost-600">Cold snap coming?</span> Don't risk a furnace failure!
+                    </p>
+                    <p class="text-silver-500">Preventative maintenance now prevents expensive emergency repairs later.</p>
+                </div>
+                <a href="tel:613-732-1319" class="bg-frost-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-frost-700 transition-colors whitespace-nowrap">
+                    Schedule Service
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-ice-100 text-frost-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                    ❄️ Winter Ready Services
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Our Services</h2>
+                <p class="text-silver-500 max-w-2xl mx-auto">
+                    From emergency furnace repairs to complete HVAC installations, we keep your home comfortable all year round.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Heating Services - FEATURED CARD -->
+                <div class="md:col-span-1 md:row-span-2 service-card bg-gradient-to-br from-orange-50 to-ice-50 rounded-2xl p-8 border-2 border-orange-200 shadow-xl relative overflow-hidden">
+                    <!-- Featured Badge -->
+                    <div class="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">
+                        ⭐ WINTER SPECIAL
+                    </div>
+                    
+                    <div class="text-6xl mb-4 heat-glow">🔥</div>
+                    <h3 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">Heating Services</h3>
+                    <p class="text-silver-500 mb-6">
+                        Don't let the cold catch you off guard! Our expert technicians provide fast, reliable heating solutions.
+                    </p>
+                    
+                    <div class="bg-red-50 border border-red-200 rounded-lg p-3 mb-6">
+                        <div class="flex items-center gap-2 text-red-600 font-bold">
+                            <span>🚨</span>
+                            <span>24/7 Emergency Furnace Repair</span>
+                        </div>
+                        <p class="text-sm text-red-500 mt-1">No heat? We'll be there fast!</p>
+                    </div>
+                    
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-center gap-2">
+                            <span class="text-orange-500">✓</span>
+                            <span>Furnace Installation & Repair</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-orange-500">✓</span>
+                            <span>Heat Pump Systems</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-orange-500">✓</span>
+                            <span>Preventative Maintenance</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-orange-500">✓</span>
+                            <span>Emergency Heating Service</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-orange-500">✓</span>
+                            <span>Thermostat Installation</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-orange-500">✓</span>
+                            <span>Indoor Air Quality</span>
+                        </li>
+                    </ul>
+                    
+                    <a href="tel:613-732-1319" class="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-bold text-center hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg">
+                        🔥 Call for Heating Service
+                    </a>
+                </div>
+                
+                <!-- Air Conditioning -->
+                <div class="service-card bg-gradient-to-br from-ice-50 to-white rounded-2xl p-6 border border-ice-100 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="text-5xl mb-4">❄️</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Air Conditioning</h3>
+                    <p class="text-silver-500 text-sm mb-4">
+                        Stay cool all summer with our complete AC services.
+                    </p>
+                    <ul class="space-y-2 text-sm text-silver-500">
+                        <li class="flex items-center gap-2">
+                            <span class="text-frost-600">✓</span>
+                            <span>AC Installation</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-frost-600">✓</span>
+                            <span>Repairs & Service</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-frost-600">✓</span>
+                            <span>Ductless Systems</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Plumbing -->
+                <div class="service-card bg-gradient-to-br from-ice-50 to-white rounded-2xl p-6 border border-ice-100 shadow-md hover:shadow-xl transition-shadow">
+                    <div class="text-5xl mb-4">💧</div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Plumbing</h3>
+                    <p class="text-silver-500 text-sm mb-4">
+                        Full-service plumbing for all your home needs.
+                    </p>
+                    <ul class="space-y-2 text-sm text-silver-500">
+                        <li class="flex items-center gap-2">
+                            <span class="text-frost-600">✓</span>
+                            <span>Water Heaters</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-frost-600">✓</span>
+                            <span>Drain Cleaning</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <span class="text-frost-600">✓</span>
+                            <span>Repairs & Installations</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Service Areas Section -->
+    <section id="areas" class="py-16 md:py-24 bg-gradient-to-br from-slate-800 to-frost-800 relative overflow-hidden">
+        <div class="absolute inset-0 snowflake-bg opacity-20"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-ice-100/20 text-ice-100 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                    📍 Ottawa Valley
+                </span>
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">Communities We Serve</h2>
+                <p class="text-silver-300 max-w-2xl mx-auto">
+                    Proudly serving the Ottawa Valley with prompt, professional service throughout the winter season.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-auto">
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-ice-100/30 hover:bg-white/20 transition-colors">
+                    <div class="text-3xl mb-2">🏘️</div>
+                    <h3 class="font-bold text-white">Pembroke</h3>
+                    <p class="text-ice-100 text-xs">Headquarters</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-ice-100/30 hover:bg-white/20 transition-colors">
+                    <div class="text-3xl mb-2">🏠</div>
+                    <h3 class="font-bold text-white">Petawawa</h3>
+                    <p class="text-ice-100 text-xs">CFB Area</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-ice-100/30 hover:bg-white/20 transition-colors">
+                    <div class="text-3xl mb-2">🌾</div>
+                    <h3 class="font-bold text-white">Cobden</h3>
+                    <p class="text-ice-100 text-xs">Rural Service</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-ice-100/30 hover:bg-white/20 transition-colors">
+                    <div class="text-3xl mb-2">⚛️</div>
+                    <h3 class="font-bold text-white">Deep River</h3>
+                    <p class="text-ice-100 text-xs">CNL Area</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-ice-100/30 hover:bg-white/20 transition-colors">
+                    <div class="text-3xl mb-2">🏡</div>
+                    <h3 class="font-bold text-white">Beachburg</h3>
+                    <p class="text-ice-100 text-xs">Rural Service</p>
+                </div>
+                <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 text-center border border-ice-100/30 hover:bg-white/20 transition-colors">
+                    <div class="text-3xl mb-2">🔬</div>
+                    <h3 class="font-bold text-white">Chalk River</h3>
+                    <p class="text-ice-100 text-xs">CNL Area</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="inline-block bg-ice-100 text-frost-700 px-4 py-1 rounded-full text-sm font-semibold mb-4">
+                        About Us
+                    </span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-slate-800 mb-4">Your Neighbours Since 2004</h2>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <p class="text-silver-500 mb-4">
+                            Watson Mechanical Ltd. has been keeping Ottawa Valley families warm for over 21 years. As a locally owned and operated business, we understand the unique challenges of our harsh Canadian winters.
+                        </p>
+                        <p class="text-silver-500 mb-6">
+                            Our A+ BBB accreditation reflects our commitment to quality workmanship and customer satisfaction. When your furnace breaks at 2 AM during a cold snap, you can count on us to be there.
+                        </p>
+                        
+                        <div class="flex flex-wrap gap-4">
+                            <div class="flex items-center gap-2 bg-ice-50 px-4 py-2 rounded-lg">
+                                <span class="text-2xl">✅</span>
+                                <span class="font-semibold text-slate-700">BBB A+ Rated</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-ice-50 px-4 py-2 rounded-lg">
+                                <span class="text-2xl">🛡️</span>
+                                <span class="font-semibold text-slate-700">Licensed & Insured</span>
+                            </div>
+                            <div class="flex items-center gap-2 bg-ice-50 px-4 py-2 rounded-lg">
+                                <span class="text-2xl">⏰</span>
+                                <span class="font-semibold text-slate-700">21+ Years</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-ice-50 to-white rounded-2xl p-6 border border-ice-100">
+                        <h3 class="font-bold text-lg text-slate-800 mb-4">Why Choose Watson Mechanical?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <span class="text-frost-600 text-xl mt-0.5">❄️</span>
+                                <div>
+                                    <span class="font-semibold text-slate-700">Winter Experts</span>
+                                    <p class="text-sm text-silver-500">We know Canadian winters inside and out</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-frost-600 text-xl mt-0.5">⚡</span>
+                                <div>
+                                    <span class="font-semibold text-slate-700">Fast Response</span>
+                                    <p class="text-sm text-silver-500">Emergency service when you need it most</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-frost-600 text-xl mt-0.5">💰</span>
+                                <div>
+                                    <span class="font-semibold text-slate-700">Fair Pricing</span>
+                                    <p class="text-sm text-silver-500">Honest quotes, no hidden fees</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="text-frost-600 text-xl mt-0.5">🔧</span>
+                                <div>
+                                    <span class="font-semibold text-slate-700">Quality Work</span>
+                                    <p class="text-sm text-silver-500">Done right the first time</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Winter CTA Section -->
+    <section class="py-16 md:py-24 bg-gradient-to-br from-red-500 via-orange-500 to-orange-600 relative overflow-hidden">
+        <div class="absolute inset-0">
+            <div class="absolute top-0 left-1/4 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-yellow-300/20 rounded-full blur-3xl"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-3xl mx-auto text-center text-white">
+                <div class="text-6xl mb-6">🔥❄️🔥</div>
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                    Don't Get Left in the Cold!
+                </h2>
+                <p class="text-xl md:text-2xl mb-8 text-white/90">
+                    Whether it's an emergency repair or preventative maintenance, we're here to keep your family warm all winter long.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+                    <a href="tel:613-732-1319" class="w-full sm:w-auto bg-white text-red-600 px-8 py-4 rounded-full font-bold text-xl hover:bg-yellow-300 transition-colors shadow-xl flex items-center justify-center gap-2">
+                        <span>📞</span>
+                        613-732-1319
+                    </a>
+                    <a href="tel:613-401-1048" class="w-full sm:w-auto bg-white/20 backdrop-blur border-2 border-white text-white px-8 py-4 rounded-full font-bold text-xl hover:bg-white/30 transition-colors flex items-center justify-center gap-2">
+                        <span>📞</span>
+                        613-401-1048
+                    </a>
+                </div>
+                
+                <div class="flex flex-wrap items-center justify-center gap-6 text-white/80">
+                    <div class="flex items-center gap-2">
+                        <span>✅</span>
+                        <span>24/7 Emergency Service</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span>✅</span>
+                        <span>Free Estimates</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span>✅</span>
+                        <span>Same-Day Service</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-ice-100 rounded-lg flex items-center justify-center">
+                            <span class="text-xl">❄️</span>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg">Watson Mechanical Ltd.</h3>
+                            <p class="text-xs text-silver-400">Est. 2004</p>
+                        </div>
+                    </div>
+                    <p class="text-silver-400 text-sm mb-4">
+                        Your trusted HVAC and plumbing experts serving the Ottawa Valley for over 21 years.
+                    </p>
+                    <div class="flex items-center gap-2 bg-white/10 rounded-lg px-3 py-2">
+                        <span>🏆</span>
+                        <span class="text-sm">BBB A+ Accredited Business</span>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold mb-4 text-ice-100

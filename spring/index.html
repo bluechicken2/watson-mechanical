@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Mechanical Ltd. | HVAC & Plumbing Services | Pembroke, ON</title>
+    <meta name="description" content="Watson Mechanical Ltd. - Your trusted HVAC and plumbing experts since 2004. Spring AC tune-ups, plumbing check-ups, and 24/7 emergency service. Serving Pembroke, Petawawa & Ottawa Valley.">
+    <meta name="keywords" content="HVAC Pembroke, air conditioning Petawawa, plumbing Cobden, AC repair Deep River, furnace installation Beachburg, ductless AC Chalk River, spring AC tune-up, plumbing check-up">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Watson Mechanical Ltd.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Watson Mechanical Ltd. | Spring Into Comfort">
+    <meta property="og:description" content="Get your AC ready for summer! Spring tune-ups and plumbing check-ups. Serving Ottawa Valley since 2004.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://watsonmechanical.ca">
+    <meta property="og:locale" content="en_CA">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://watsonmechanical.ca">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'spring-green': '#22C55E',
+                        'spring-green-light': '#86EFAC',
+                        'spring-blue': '#67E8F9',
+                        'spring-blue-dark': '#06B6D4',
+                    },
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .spring-gradient {
+            background: linear-gradient(135deg, #22C55E 0%, #67E8F9 50%, #86EFAC 100%);
+        }
+
+        .spring-gradient-soft {
+            background: linear-gradient(180deg, #f0fdf4 0%, #ecfeff 100%);
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .leaf-float {
+            animation: leafFloat 6s ease-in-out infinite;
+        }
+
+        @keyframes leafFloat {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-20px) rotate(5deg); }
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .pulse-green {
+            animation: pulseGreen 2s ease-in-out infinite;
+        }
+
+        @keyframes pulseGreen {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.4); }
+            50% { box-shadow: 0 0 0 15px rgba(34, 197, 94, 0); }
+        }
+
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(34, 197, 94, 0.15);
+        }
+
+        .service-icon {
+            transition: all 0.3s ease;
+        }
+
+        .card-hover:hover .service-icon {
+            transform: scale(1.1);
+        }
+    </style>
+
+    <!-- Schema.org LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Watson Mechanical Ltd.",
+        "image": "https://watsonmechanical.ca/logo.png",
+        "description": "Professional HVAC and plumbing services serving the Ottawa Valley since 2004. Specializing in air conditioning, heating, and plumbing solutions for residential and commercial clients.",
+        "@id": "https://watsonmechanical.ca",
+        "url": "https://watsonmechanical.ca",
+        "telephone": ["+1-613-732-1319", "+1-613-401-1048"],
+        "email": "admin@watsonmechanical.ca",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "454 Biesenthal Rd",
+            "addressLocality": "Pembroke",
+            "addressRegion": "ON",
+            "postalCode": "K8A 6W7",
+            "addressCountry": "CA"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 45.8265,
+            "longitude": -77.1162
+        },
+        "areaServed": [
+            {"@type": "City", "name": "Pembroke"},
+            {"@type": "City", "name": "Petawawa"},
+            {"@type": "City", "name": "Cobden"},
+            {"@type": "City", "name": "Deep River"},
+            {"@type": "City", "name": "Beachburg"},
+            {"@type": "City", "name": "Chalk River"}
+        ],
+        "priceRange": "$$",
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "HVAC and Plumbing Services",
+            "itemListElement": [
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Air Conditioning Installation & Repair"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Furnace Installation & Repair"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Plumbing Services"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Heat Pump Systems"}},
+                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ductless AC Systems"}}
+            ]
+        },
+        "sameAs": [
+            "https://www.bbb.org/ca/on/pembroke/profile/hvac-contractors/watson-mechanical-ltd-0117-131779"
+        ]
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-800 overflow-x-hidden">
+
+    <!-- Emergency Bar -->
+    <div class="bg-gradient-to-r from-spring-green via-spring-blue-dark to-spring-green text-white py-2.5">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row justify-between items-center text-sm">
+            <div class="flex items-center gap-2 mb-1 sm:mb-0">
+                <span class="animate-pulse inline-block w-2 h-2 bg-white rounded-full"></span>
+                <span class="font-semibold">24/7 Emergency Service Available</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="tel:613-732-1319" class="flex items-center gap-1 hover:text-spring-green-light transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span class="font-semibold">613-732-1319</span>
+                </a>
+                <a href="tel:613-401-1048" class="flex items-center gap-1 hover:text-spring-green-light transition-colors">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                    </svg>
+                    <span class="font-semibold">613-401-1048</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="glass sticky top-0 z-50 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3">
+                    <div class="w-12 h-12 spring-gradient rounded-xl flex items-center justify-center shadow-lg">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">Watson Mechanical</h1>
+                        <p class="text-xs text-spring-green font-medium">Est. 2004</p>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden lg:flex items-center gap-8">
+                    <a href="#services" class="text-gray-600 hover:text-spring-green font-medium transition-colors">Services</a>
+                    <a href="#areas" class="text-gray-600 hover:text-spring-green font-medium transition-colors">Service Areas</a>
+                    <a href="#about" class="text-gray-600 hover:text-spring-green font-medium transition-colors">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-spring-green font-medium transition-colors">Contact</a>
+                </nav>
+
+                <!-- CTA -->
+                <div class="flex items-center gap-3">
+                    <a href="tel:613-732-1319" class="hidden md:flex items-center gap-2 bg-spring-green text-white px-5 py-2.5 rounded-full font-semibold hover:bg-green-600 transition-colors pulse-green">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        Call Now
+                    </a>
+                    <!-- Mobile Menu -->
+                    <button id="mobileMenuBtn" class="lg:hidden p-2 text-gray-600 hover:text-spring-green">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile Nav -->
+            <nav id="mobileMenu" class="lg:hidden hidden pt-4 pb-2 border-t mt-4 border-gray-200">
+                <div class="flex flex-col gap-3">
+                    <a href="#services" class="text-gray-600 hover:text-spring-green font-medium py-2">Services</a>
+                    <a href="#areas" class="text-gray-600 hover:text-spring-green font-medium py-2">Service Areas</a>
+                    <a href="#about" class="text-gray-600 hover:text-spring-green font-medium py-2">About</a>
+                    <a href="#contact" class="text-gray-600 hover:text-spring-green font-medium py-2">Contact</a>
+                    <a href="tel:613-732-1319" class="flex items-center justify-center gap-2 bg-spring-green text-white px-5 py-3 rounded-full font-semibold">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        Call 613-732-1319
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[90vh] flex items-center spring-gradient-soft overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 left-10 w-64 h-64 bg-spring-green/10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-20 right-10 w-96 h-96 bg-spring-blue/10 rounded-full blur-3xl"></div>
+
+        <!-- Floating Leaves -->
+        <div class="absolute top-32 right-20 text-spring-green/30 leaf-float">
+            <svg class="w-16 h-16" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+            </svg>
+        </div>
+        <div class="absolute top-64 left-32 text-spring-green-light/40 leaf-float" style="animation-delay: -2s;'>
+            <svg class="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+            </svg>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <!-- Spring Badge -->
+                    <div class="inline-flex items-center gap-2 bg-spring-green/10 text-spring-green px-4 py-2 rounded-full mb-6">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+                        </svg>
+                        <span class="font-semibold text-sm">Spring is Here!</span>
+                    </div>
+
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight mb-6">
+                        Spring Into
+                        <span class="text-transparent bg-clip-text spring-gradient">Comfort</span>
+                    </h1>
+
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        Don't wait until the first heat wave! Get your AC ready for summer with our professional tune-up services. Plus, spring plumbing check-ups to prevent costly repairs.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="tel:613-732-1319" class="flex items-center justify-center gap-2 bg-spring-green text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-xl">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            Schedule Tune-Up
+                        </a>
+                        <a href="#services" class="flex items-center justify-center gap-2 bg-white text-spring-green px-8 py-4 rounded-full font-semibold text-lg border-2 border-spring-green hover:bg-spring-green hover:text-white transition-all">
+                            View Services
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap gap-6 items-center">
+                        <div class="flex items-center gap-2">
+                            <div class="w-10 h-10 bg-spring-green/10 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-spring-green" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                            </div>
+                            <span class="text-sm font-medium text-gray-700">BBB A+ Rated</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-10 h-10 bg-spring-blue/20 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-spring-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-sm font-medium text-gray-700">21+ Years</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-10 h-10 bg-spring-green-light/30 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-spring-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <span class="text-sm font-medium text-gray-700">6 Communities</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Image/Illustration -->
+                <div class="relative fade-in" style="animation-delay: 0.2s;'>
+                    <div class="relative bg-white rounded-3xl shadow-2xl p-8 overflow-hidden">
+                        <!-- Decorative Background -->
+                        <div class="absolute top-0 right-0 w-32 h-32 spring-gradient opacity-20 rounded-bl-full"></div>
+
+                        <div class="relative z-10 text-center">
+                            <div class="w-32 h-32 mx-auto mb-6 bg-gradient-to-br from-spring-green to-spring-blue rounded-full flex items-center justify-center">
+                                <svg class="w-16 h-16 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Spring AC Tune-Up</h3>
+                            <p class="text-gray-600 mb-6">Prepare your system before the heat arrives</p>
+
+                            <div class="grid grid-cols-3 gap-4 text-center mb-6">
+                                <div class="bg-spring-green/5 rounded-xl p-3">
+                                    <p class="text-2xl font-bold text-spring-green">30%</p>
+                                    <p class="text-xs text-gray-500">Energy Savings</p>
+                                </div>
+                                <div class="bg-spring-blue/10 rounded-xl p-3">
+                                    <p class="text-2xl font-bold text-spring-blue-dark">5+</p>
+                                    <p class="text-xs text-gray-500">Year Lifespan</p>
+                                </div>
+                                <div class="bg-spring-green-light/20 rounded-xl p-3">
+                                    <p class="text-2xl font-bold text-spring-green">24hr</p>
+                                    <p class="text-xs text-gray-500">Response</p>
+                                </div>
+                            </div>
+
+                            <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-spring-green font-semibold hover:text-green-700">
+                                Book Your Tune-Up
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <span class="inline-block bg-spring-green/10 text-spring-green px-4 py-1 rounded-full text-sm font-semibold mb-4">Our Services</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Spring Into Savings</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Comprehensive HVAC and plumbing services to keep your home comfortable all season long</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- AC Service - Featured -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg border-2 border-spring-green overflow-hidden relative">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-spring-green text-white text-xs font-bold px-3 py-1 rounded-full">Spring Special</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="service-icon w-16 h-16 bg-spring-green/10 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-spring-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Air Conditioning</h3>
+                        <p class="text-gray-600 mb-4">Get your AC summer-ready! Professional tune-ups, installations, and repairs for all makes and models.</p>
+                        <ul class="space-y-2 text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-green flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Spring AC Tune-Ups
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-green flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Ductless AC Systems
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-green flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                New Installations
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-green flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Emergency Repairs
+                            </li>
+                        </ul>
+                        <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-spring-green font-semibold hover:text-green-700">
+                            Schedule AC Service
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Plumbing - Featured -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg border-2 border-spring-blue-dark overflow-hidden relative">
+                    <div class="absolute top-4 right-4">
+                        <span class="bg-spring-blue-dark text-white text-xs font-bold px-3 py-1 rounded-full">Spring Check-Up</span>
+                    </div>
+                    <div class="p-8">
+                        <div class="service-icon w-16 h-16 bg-spring-blue/20 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-spring-blue-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Plumbing</h3>
+                        <p class="text-gray-600 mb-4">Spring plumbing check-ups prevent costly repairs. From drains to water heaters, we've got you covered.</p>
+                        <ul class="space-y-2 text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-blue-dark flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Drain Cleaning
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-blue-dark flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Water Heaters
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-blue-dark flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Pipe Repairs
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-spring-blue-dark flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Fixture Installation
+                            </li>
+                        </ul>
+                        <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-spring-blue-dark font-semibold hover:text-cyan-700">
+                            Schedule Plumbing
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Heating -->
+                <div class="card-hover bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden">
+                    <div class="p-8">
+                        <div class="service-icon w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">Heating</h3>
+                        <p class="text-gray-600 mb-4">Furnaces, heat pumps, and maintenance plans to keep you warm when temperatures drop.</p>
+                        <ul class="space-y-2 text-gray-600 mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Furnace Installation
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Heat Pump Systems
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                Maintenance Plans
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-5 h-5 text-orange-500 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                </svg>
+                                24/7 Repairs
+                            </li>
+                        </ul>
+                        <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-orange-500 font-semibold hover:text-orange-600">
+                            Schedule Heating
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section id="areas" class="py-20 spring-gradient-soft">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <span class="inline-block bg-spring-green/10 text-spring-green px-4 py-1 rounded-full text-sm font-semibold mb-4">Service Areas</span>
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Serving the Ottawa Valley</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Proudly serving 6 communities across the region with reliable HVAC and plumbing services since 2004</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 spring-gradient rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900">Pembroke</h3>
+                    <p class="text-sm text-gray-500">Headquarters</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-spring-blue-dark rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900">Petawawa</h3>
+                    <p class="text-sm text-gray-500">CFB Area</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 spring-gradient rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900">Cobden</h3>
+                    <p class="text-sm text-gray-500">Whitewater</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-spring-blue-dark rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900">Deep River</h3>
+                    <p class="text-sm text-gray-500">CNL Area</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 spring-gradient rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900">Beachburg</h3>
+                    <p class="text-sm text-gray-500">Rural</p>
+                </div>
+
+                <div class="bg-white rounded-xl p-6 text-center shadow-md hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 mx-auto mb-3 bg-spring-blue-dark rounded-full flex items-center justify-center">
+                        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-bold text-gray-900">Chalk River</h3>
+                    <p class="text-sm text-gray-500">Research</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <span class="inline-block bg-spring-green/10 text-spring-green px-4 py-1 rounded-full text-sm font-semibold mb-4">About Us</span>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">21+ Years of Trusted Service</h2>
+                    <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                        Since 2004, Watson Mechanical Ltd. has been the Ottawa Valley's trusted partner for all HVAC and plumbing needs. Our BBB A+ accreditation reflects our commitment to excellence and customer satisfaction.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        From spring AC tune-ups to emergency plumbing repairs, our experienced team delivers reliable, professional service when you need it most. We're proud to serve our neighbours across six communities.
+                    </p>
+
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="bg-spring-green/5 rounded-xl p-6 text-center">
+                            <p class="text-4xl font-bold text-spring-green mb-2">21+</p>
+                            <p class="text-gray-600 font-medium">Years Experience</p>
+                        </div>
+                        <div class="bg-spring-blue/10 rounded-xl p-6 text-center">
+                            <p class="text-4xl font-bold text-spring-blue-dark mb-2">A+</p>
+                            <p class="text-gray-600 font-medium">BBB Rating</p>
+                        </div>
+                        <div class="bg-spring-green-light/20 rounded-xl p-6 text-center">
+                            <p class="text-4xl font-bold text-spring-green mb-2">6</p>
+                            <p class="text-gray-600 font-medium">Communities</p>
+                        </div>
+                        <div class="bg-spring-blue/10 rounded-xl p-6 text-center">
+                            <p class="text-4xl font-bold text-spring-blue-dark mb-2">24/7</p>
+                            <p class="text-gray-600 font-medium">Emergency</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-spring-green/10 to-spring-blue/10 rounded-3xl p-8">
+                        <div class="bg-white rounded-2xl shadow-xl p-8">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6">Why Choose Watson?</h3>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-spring-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-spring-green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">BBB A+ Accredited</h4>
+                                        <p class="text-gray-600 text-sm">Top-rated for quality and service</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-spring-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-spring-green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">24/7 Emergency Service</h4>
+                                        <p class="text-gray-600 text-sm">Always here when you need us</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-spring-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-spring-green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Local Family Business</h4>
+                                        <p class="text-gray-600 text-sm">Serving neighbours since 2004</p>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <div class="w-10 h-10 bg-spring-green/10 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <svg class="w-5 h-5 text-spring-green" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"/>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-semibold text-gray-900">Full-Service HVAC & Plumbing</h4>
+                                        <p class="text-gray-600 text-sm">One call does it all</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-20 spring-gradient">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-white/20 text-white px-4 py-2 rounded-full mb-6">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+                    </svg>
+                    <span class="font-semibold">Spring Ready</span>
+                </div>
+
+                <h2 class="text-3xl md:text-5xl font-bold text-white mb-6">Don't Wait for the Heat Wave!</h2>
+                <p class="text-xl text-white/90 mb-10">
+                    Schedule your AC tune-up and plumbing check-up today. Beat the rush and ensure your home is ready for summer comfort.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+                    <a href="tel:613-732-1319" class="flex items-center justify-center gap-3 bg-white text-spring-green px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        613-732-1319
+                    </a>
+                    <a href="tel:613-401-1048" class="flex items-center justify-center gap-3 bg-white/20 text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                        </svg>
+                        613-401-1048
+                    </a>
+                </div>
+
+                <a href="mailto:admin@watsonmechanical.ca" class="inline-flex items-center gap-2 text-white/80 hover:text-white font-medium">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    admin@watsonmechanical.ca
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Company -->
+                <div>
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 spring-gradient rounded-xl flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">Watson Mechanical</h3>
+                            <p class="text-sm text-gray-400">Est. 2004</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 mb-4">Your trusted HVAC and plumbing partner serving the Ottawa Valley for over 21 years.</p>
+                    <div class="flex items-center gap-2">
+                        <span class="bg-spring-green/20 text-spring-green px-3 py-1 rounded-full text-sm font-semibold">BBB A+ Rated</span>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Services</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#services" class="hover:text-spring-green transition-colors">Air Conditioning</a></li>
+                        <li><a href="#services" class="hover:text-spring-green transition-colors">Heating & Furnaces</a></li>
+                        <li><a href="#services" class="hover:text-spring-green transition-colors">Plumbing Services</a></li>
+                        <li><a href="#services" class="hover:text-spring-green transition-colors">Heat Pump Systems</a></li>
+                        <li><a href="#services" class="hover:text-spring-green transition-colors">Ductless AC</a></li>
+                        <li><a href="#services" class="hover:text-spring-green transition-colors">Maintenance Plans</a></li>
+                    </ul>
+                </div>
+
+                <!-- Service Areas -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Service Areas</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="#areas" class="hover:text-spring-green transition-colors">Pembroke</a></li>
+                        <li><a href="#areas" class="hover:text-spring-green transition-colors">Petawawa</a></li>
+                        <li><a href="#areas" class="hover:text-spring-green transition-colors">Cobden</a></li>
+                        <li><a href="#areas" class="hover:text-spring-green transition-colors">Deep River</a></li>
+                        <li><a href="#areas" class="hover:text-spring-green transition-colors">Beachburg</a></li>
+                        <li><a href="#areas" class="hover:text-spring-green transition-colors">Chalk River</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <svg class="w-5 h-5 text-spring-green flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>454 Biesenthal Rd<br>Pembroke, ON K8A 6W7</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-spring-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                            </svg>
+                            <div>
+                                <a href="tel:613-732-1319" class="hover:text-spring-green transition-colors">613-732-1319</a><br>
+                                <a href="tel:613-401-1048" class="hover:text-spring-green transition-colors">613-401-1048</a>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-5 h-5 text-spring-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                            </svg>
+                            <a href="mailto:admin@watsonmechanical.ca" class="hover:text-spring-green transition-colors">admin@watsonmechanical.ca</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">&copy; 2024 Watson Mechanical Ltd. All rights reserved.</p>
+                <p class="text-gray-500 text-sm">24/7 Emergency Service Available</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.animationPlayState = 'paused';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

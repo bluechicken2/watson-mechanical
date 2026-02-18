@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watson Mechanical Ltd. | HVAC & Plumbing Services in Pembroke & Ottawa Valley</title>
+    <meta name="description" content="Watson Mechanical Ltd. provides expert heating, air conditioning, and plumbing services in Pembroke, Petawawa, and Ottawa Valley. 24/7 emergency service. BBB A+ Accredited. Call 613-732-1319.">
+    <meta name="keywords" content="HVAC Pembroke, plumber Petawawa, heating repair, air conditioning installation, plumbing services Ottawa Valley, furnace repair, water heater, drain cleaning">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Watson Mechanical Ltd.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Watson Mechanical Ltd. | HVAC & Plumbing Services">
+    <meta property="og:description" content="21+ years of trusted HVAC and plumbing services in Pembroke and Ottawa Valley. 24/7 emergency service available.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_CA">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            200: '#99f6e4',
+                            300: '#5eead4',
+                            400: '#2dd4bf',
+                            500: '#14b8a6',
+                            600: '#0d9488',
+                            700: '#0f766e',
+                            800: '#115e59',
+                            900: '#134e4a',
+                        },
+                        accent: {
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts - Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        
+        /* Glassmorphism Effect */
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .glass-dark {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(13, 148, 136, 0.1);
+        }
+        
+        /* Gradient Backgrounds */
+        .gradient-hero {
+            background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%);
+        }
+        
+        .gradient-accent {
+            background: linear-gradient(135deg, #0ea5e9 0%, #0d9488 100%);
+        }
+        
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+        
+        /* Custom Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Service Card Hover */
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(13, 148, 136, 0.25);
+        }
+        
+        /* Area Badge */
+        .area-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .area-badge:hover {
+            background: linear-gradient(135deg, #0d9488, #0ea5e9);
+            color: white;
+            transform: scale(1.05);
+        }
