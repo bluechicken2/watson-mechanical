@@ -8,13 +8,13 @@
     <meta name="keywords" content="HVAC Pembroke, plumber Petawawa, heating repair, air conditioning installation, plumbing services Ottawa Valley, furnace repair, water heater, drain cleaning">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Watson Mechanical Ltd.">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Watson Mechanical Ltd. | HVAC & Plumbing Services">
     <meta property="og:description" content="21+ years of trusted HVAC and plumbing services in Pembroke and Ottawa Valley. 24/7 emergency service available.">
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_CA">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -47,76 +47,338 @@
             }
         }
     </script>
-    
+
     <!-- Google Fonts - Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <style>
         * { font-family: 'Inter', sans-serif; }
-        
-        /* Glassmorphism Effect */
+
+        /* Glassmorphism Effects */
         .glass {
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             -webkit-backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
-        
+
         .glass-dark {
             background: rgba(15, 23, 42, 0.7);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
         }
-        
+
         .glass-card {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(13, 148, 136, 0.1);
         }
-        
+
         /* Gradient Backgrounds */
         .gradient-hero {
             background: linear-gradient(135deg, #0f766e 0%, #0d9488 50%, #14b8a6 100%);
         }
-        
+
         .gradient-accent {
             background: linear-gradient(135deg, #0ea5e9 0%, #0d9488 100%);
         }
-        
+
         /* Smooth Scrolling */
         html { scroll-behavior: smooth; }
-        
+
         /* Custom Animations */
         @keyframes float {
             0%, 100% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
         }
-        
+
         .animate-float {
             animation: float 6s ease-in-out infinite;
         }
-        
+
         /* Service Card Hover */
         .service-card {
             transition: all 0.3s ease;
         }
-        
+
         .service-card:hover {
             transform: translateY(-8px);
             box-shadow: 0 25px 50px -12px rgba(13, 148, 136, 0.25);
         }
-        
+
         /* Area Badge */
         .area-badge {
             transition: all 0.3s ease;
         }
-        
+
         .area-badge:hover {
             background: linear-gradient(135deg, #0d9488, #0ea5e9);
             color: white;
             transform: scale(1.05);
         }
+
+        /* Animated Background */
+        .animated-bg {
+            background: linear-gradient(-45deg, #0f766e, #0d9488, #14b8a6, #0ea5e9);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body class="bg-slate-50">
+    <!-- Header -->
+    <header class="fixed w-full top-0 z-50 glass-dark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 rounded-xl gradient-accent flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">W</span>
+                    </div>
+                    <div>
+                        <h1 class="text-white font-bold text-xl">Watson Mechanical</h1>
+                        <p class="text-teal-300 text-xs">HVAC & Plumbing</p>
+                    </div>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-white/80 hover:text-white transition">Services</a>
+                    <a href="#about" class="text-white/80 hover:text-white transition">About</a>
+                    <a href="#areas" class="text-white/80 hover:text-white transition">Service Areas</a>
+                    <a href="#contact" class="text-white/80 hover:text-white transition">Contact</a>
+                </nav>
+                <a href="tel:613-732-1319" class="gradient-accent text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition">
+                    613-732-1319
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="animated-bg min-h-screen flex items-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-white">
+                    <div class="inline-block glass px-4 py-2 rounded-full mb-6">
+                        <span class="text-teal-200">21+ Years of Excellence</span>
+                    </div>
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Expert HVAC &<br>Plumbing Services
+                    </h1>
+                    <p class="text-xl text-white/80 mb-8">
+                        Trusted by Pembroke & Ottawa Valley families since 2003. 24/7 emergency service, BBB A+ accredited.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="tel:613-732-1319" class="bg-white text-teal-700 px-8 py-4 rounded-full font-bold hover:bg-teal-50 transition">
+                            Call Now: 613-732-1319
+                        </a>
+                        <a href="#services" class="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition">
+                            Our Services
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="glass rounded-3xl p-8 animate-float">
+                        <div class="text-center text-white">
+                            <div class="text-6xl mb-4">🔧</div>
+                            <h3 class="text-2xl font-bold mb-2">24/7 Emergency</h3>
+                            <p class="text-white/80">Fast response when you need it most</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Our Services</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Professional HVAC and plumbing solutions for residential and commercial properties</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- HVAC Card -->
+                <div class="service-card glass-card rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 gradient-hero rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">❄️</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">HVAC Services</h3>
+                    <ul class="text-slate-600 space-y-2">
+                        <li>• Furnace installation & repair</li>
+                        <li>• Air conditioning systems</li>
+                        <li>• Heat pumps</li>
+                        <li>• Ductless mini-splits</li>
+                        <li>• Maintenance plans</li>
+                    </ul>
+                </div>
+                <!-- Plumbing Card -->
+                <div class="service-card glass-card rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 gradient-accent rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🚿</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">Plumbing Services</h3>
+                    <ul class="text-slate-600 space-y-2">
+                        <li>• Drain cleaning</li>
+                        <li>• Water heater installation</li>
+                        <li>• Pipe repairs & replacements</li>
+                        <li>• Fixture installation</li>
+                        <li>• Sump pumps</li>
+                    </ul>
+                </div>
+                <!-- Emergency Card -->
+                <div class="service-card glass-card rounded-2xl p-8 shadow-lg">
+                    <div class="w-16 h-16 bg-red-500 rounded-xl flex items-center justify-center mb-6">
+                        <span class="text-3xl">🆘</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-800 mb-3">24/7 Emergency</h3>
+                    <ul class="text-slate-600 space-y-2">
+                        <li>• Fast response times</li>
+                        <li>• Available nights & weekends</li>
+                        <li>• No overtime charges</li>
+                        <li>• Fully equipped trucks</li>
+                        <li>• Licensed technicians</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-slate-800 mb-6">Why Choose Watson Mechanical?</h2>
+                    <p class="text-slate-600 mb-6">
+                        With over 21 years of experience serving Pembroke and the Ottawa Valley, we've built our reputation on quality workmanship, honest pricing, and exceptional customer service.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 gradient-hero rounded-lg flex items-center justify-center">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">BBB A+ Accredited</h4>
+                                <p class="text-slate-600 text-sm">Highest rating for trust & reliability</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 gradient-accent rounded-lg flex items-center justify-center">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Licensed & Insured</h4>
+                                <p class="text-slate-600 text-sm">Full protection & peace of mind</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div class="w-12 h-12 bg-slate-700 rounded-lg flex items-center justify-center">
+                                <span class="text-white text-xl">✓</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-slate-800">Local Family Business</h4>
+                                <p class="text-slate-600 text-sm">Serving our community since 2003</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass-card rounded-2xl p-8 shadow-xl">
+                    <div class="text-center">
+                        <div class="text-6xl font-bold gradient-hero bg-clip-text text-transparent mb-2">21+</div>
+                        <p class="text-slate-600 mb-6">Years of Experience</p>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="bg-slate-100 rounded-xl p-4">
+                                <div class="text-2xl font-bold text-teal-600">1000+</div>
+                                <p class="text-slate-600 text-sm">Happy Customers</p>
+                            </div>
+                            <div class="bg-slate-100 rounded-xl p-4">
+                                <div class="text-2xl font-bold text-teal-600">24/7</div>
+                                <p class="text-slate-600 text-sm">Emergency Service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas -->
+    <section id="areas" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-slate-800 mb-4">Service Areas</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Proudly serving Pembroke and the entire Ottawa Valley region</p>
+            </div>
+            <div class="flex flex-wrap justify-center gap-4">
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Pembroke</span>
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Petawawa</span>
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Cobden</span>
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Deep River</span>
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Beachburg</span>
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Chalk River</span>
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Renfrew</span>
+                <span class="area-badge bg-slate-100 px-6 py-3 rounded-full text-slate-700 font-medium cursor-pointer">Arnprior</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 animated-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass rounded-3xl p-12 text-center text-white">
+                <h2 class="text-4xl font-bold mb-4">Ready to Get Started?</h2>
+                <p class="text-white/80 mb-8 max-w-2xl mx-auto">
+                    Contact us today for a free estimate or emergency service. We're here to help!
+                </p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <a href="tel:613-732-1319" class="bg-white text-teal-700 px-8 py-4 rounded-full font-bold hover:bg-teal-50 transition">
+                        📞 613-732-1319
+                    </a>
+                    <a href="mailto:info@watsonmechanical.ca" class="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition">
+                        ✉️ Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-10 h-10 rounded-lg gradient-accent flex items-center justify-center">
+                        <span class="text-white font-bold">W</span>
+                    </div>
+                    <div>
+                        <h3 class="font-bold">Watson Mechanical Ltd.</h3>
+                        <p class="text-slate-400 text-sm">HVAC & Plumbing</p>
+                    </div>
+                </div>
+                <p class="text-slate-500 text-sm">Serving Pembroke, Petawawa & Ottawa Valley since 2003</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
