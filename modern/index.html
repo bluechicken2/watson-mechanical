@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Under Construction Banner -->
+<style>
+.construction-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #f59e0b, #d97706, #f59e0b);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 99999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.construction-banner::before {
+    content: "🚧";
+    font-size: 18px;
+}
+.construction-banner::after {
+    content: "🚧";
+    font-size: 18px;
+}
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+body {
+    padding-top: 50px !important;
+}
+</style>
+<div class="construction-banner">
+    Under Construction — Coming Soon!
+</div>
+<!-- End Banner -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watson Mechanical Ltd. | HVAC & Plumbing Services in Pembroke & Ottawa Valley</title>
-    <meta name="description" content="Watson Mechanical Ltd. provides expert heating, air conditioning, and plumbing services in Pembroke, Petawawa, and Ottawa Valley. 24/7 emergency service. BBB A+ Accredited. Call 613-732-1319.">
+    <meta name="description" content="Watson Mechanical Ltd. provides expert heating, air conditioning, and plumbing services in Pembroke, Petawawa, and Ottawa Valley. 24/7 emergency service. BBB A+ Accredited. Call [CONTACT INFO REMOVED].">
     <meta name="keywords" content="HVAC Pembroke, plumber Petawawa, heating repair, air conditioning installation, plumbing services Ottawa Valley, furnace repair, water heater, drain cleaning">
     <meta name="robots" content="index, follow">
     <meta name="author" content="Watson Mechanical Ltd.">
@@ -155,8 +198,8 @@
                     <a href="#areas" class="text-white/80 hover:text-white transition">Service Areas</a>
                     <a href="#contact" class="text-white/80 hover:text-white transition">Contact</a>
                 </nav>
-                <a href="tel:613-732-1319" class="gradient-accent text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition">
-                    613-732-1319
+                <a href="tel:[CONTACT INFO REMOVED]" class="gradient-accent text-white px-6 py-2 rounded-full font-semibold hover:opacity-90 transition">
+                    [CONTACT INFO REMOVED]
                 </a>
             </div>
         </div>
@@ -177,8 +220,8 @@
                         Trusted by Pembroke & Ottawa Valley families since 2003. 24/7 emergency service, BBB A+ accredited.
                     </p>
                     <div class="flex flex-wrap gap-4">
-                        <a href="tel:613-732-1319" class="bg-white text-teal-700 px-8 py-4 rounded-full font-bold hover:bg-teal-50 transition">
-                            Call Now: 613-732-1319
+                        <a href="tel:[CONTACT INFO REMOVED]" class="bg-white text-teal-700 px-8 py-4 rounded-full font-bold hover:bg-teal-50 transition">
+                            Call Now: [CONTACT INFO REMOVED]
                         </a>
                         <a href="#services" class="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition">
                             Our Services
@@ -340,10 +383,10 @@
                     Contact us today for a free estimate or emergency service. We're here to help!
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="tel:613-732-1319" class="bg-white text-teal-700 px-8 py-4 rounded-full font-bold hover:bg-teal-50 transition">
-                        📞 613-732-1319
+                    <a href="tel:[CONTACT INFO REMOVED]" class="bg-white text-teal-700 px-8 py-4 rounded-full font-bold hover:bg-teal-50 transition">
+                        📞 [CONTACT INFO REMOVED]
                     </a>
-                    <a href="mailto:info@watsonmechanical.ca" class="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition">
+                    <a href="mailto:[EMAIL REMOVED]" class="glass text-white px-8 py-4 rounded-full font-semibold hover:bg-white/20 transition">
                         ✉️ Email Us
                     </a>
                 </div>

@@ -1,10 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Under Construction Banner -->
+<style>
+.construction-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #f59e0b, #d97706, #f59e0b);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 99999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.construction-banner::before {
+    content: "🚧";
+    font-size: 18px;
+}
+.construction-banner::after {
+    content: "🚧";
+    font-size: 18px;
+}
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+body {
+    padding-top: 50px !important;
+}
+</style>
+<div class="construction-banner">
+    Under Construction — Coming Soon!
+</div>
+<!-- End Banner -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watson Mechanical Ltd. | Heating, Cooling & Plumbing | Pembroke ON | 24/7 Emergency Service</title>
-    <meta name="description" content="Watson Mechanical Ltd. - Your trusted HVAC and plumbing experts since 2004. 24/7 emergency heating service in Pembroke, Petawawa & Ottawa Valley. BBB A+ Accredited. Call 613-732-1319">
+    <meta name="description" content="Watson Mechanical Ltd. - Your trusted HVAC and plumbing experts since 2004. 24/7 emergency heating service in Pembroke, Petawawa & Ottawa Valley. BBB A+ Accredited. Call [CONTACT INFO REMOVED]">
     <meta name="keywords" content="heating Pembroke, furnace repair Petawawa, HVAC Ottawa Valley, emergency heating, heat pump, plumbing Pembroke, air conditioning, Watson Mechanical">
     <meta name="robots" content="index, follow">
     <meta name="geo.region" content="CA-ON">
@@ -123,8 +166,8 @@
         "name": "Watson Mechanical Ltd.",
         "description": "Professional HVAC and plumbing services serving Pembroke and Ottawa Valley since 2004. 24/7 emergency heating service available.",
         "url": "https://watsonmechanical.ca",
-        "telephone": ["+1-613-732-1319", "+1-613-401-1048"],
-        "email": "admin@watsonmechanical.ca",
+        "telephone": ["+1-[CONTACT INFO REMOVED]", "+1-[CONTACT INFO REMOVED]"],
+        "email": "[EMAIL REMOVED]",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "454 Biesenthal Rd",
@@ -171,8 +214,8 @@
                 </div>
                 <div class="flex items-center gap-4">
                     <span class="text-sm md:text-base">Don't freeze! Call now:</span>
-                    <a href="tel:613-732-1319" class="bg-white text-red-600 px-4 py-1 rounded-full font-bold hover:bg-yellow-300 transition-colors emergency-pulse">
-                        613-732-1319
+                    <a href="tel:[CONTACT INFO REMOVED]" class="bg-white text-red-600 px-4 py-1 rounded-full font-bold hover:bg-yellow-300 transition-colors emergency-pulse">
+                        [CONTACT INFO REMOVED]
                     </a>
                 </div>
             </div>
@@ -196,7 +239,7 @@
                     <a href="#services" class="text-silver-500 hover:text-frost-600 transition-colors font-medium">Services</a>
                     <a href="#areas" class="text-silver-500 hover:text-frost-600 transition-colors font-medium">Service Areas</a>
                     <a href="#about" class="text-silver-500 hover:text-frost-600 transition-colors font-medium">About</a>
-                    <a href="tel:613-732-1319" class="bg-gradient-to-r from-frost-600 to-frost-700 text-white px-5 py-2 rounded-full font-semibold hover:from-frost-700 hover:to-frost-800 transition-all shadow-md">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="bg-gradient-to-r from-frost-600 to-frost-700 text-white px-5 py-2 rounded-full font-semibold hover:from-frost-700 hover:to-frost-800 transition-all shadow-md">
                         📞 Call Now
                     </a>
                 </nav>
@@ -212,8 +255,8 @@
                     <a href="#services" class="text-silver-500 hover:text-frost-600 font-medium">Services</a>
                     <a href="#areas" class="text-silver-500 hover:text-frost-600 font-medium">Service Areas</a>
                     <a href="#about" class="text-silver-500 hover:text-frost-600 font-medium">About</a>
-                    <a href="tel:613-732-1319" class="bg-frost-600 text-white px-4 py-2 rounded-full font-semibold text-center">
-                        📞 613-732-1319
+                    <a href="tel:[CONTACT INFO REMOVED]" class="bg-frost-600 text-white px-4 py-2 rounded-full font-semibold text-center">
+                        📞 [CONTACT INFO REMOVED]
                     </a>
                 </nav>
             </div>
@@ -264,9 +307,9 @@
                 
                 <!-- CTA Buttons -->
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-                    <a href="tel:613-732-1319" class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-xl heat-glow flex items-center justify-center gap-2">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="w-full sm:w-auto bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-orange-600 hover:to-orange-700 transition-all shadow-xl heat-glow flex items-center justify-center gap-2">
                         <span class="text-2xl">🔥</span>
-                        Emergency Heating: 613-732-1319
+                        Emergency Heating: [CONTACT INFO REMOVED]
                     </a>
                     <a href="#services" class="w-full sm:w-auto bg-white/10 backdrop-blur border-2 border-ice-100 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/20 transition-all flex items-center justify-center gap-2">
                         <span>View Services</span>
@@ -313,7 +356,7 @@
                     </p>
                     <p class="text-silver-500">Preventative maintenance now prevents expensive emergency repairs later.</p>
                 </div>
-                <a href="tel:613-732-1319" class="bg-frost-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-frost-700 transition-colors whitespace-nowrap">
+                <a href="tel:[CONTACT INFO REMOVED]" class="bg-frost-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-frost-700 transition-colors whitespace-nowrap">
                     Schedule Service
                 </a>
             </div>
@@ -382,7 +425,7 @@
                         </li>
                     </ul>
                     
-                    <a href="tel:613-732-1319" class="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-bold text-center hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="block w-full bg-gradient-to-r from-orange-500 to-orange-600 text-white py-4 rounded-xl font-bold text-center hover:from-orange-600 hover:to-orange-700 transition-all shadow-lg">
                         🔥 Call for Heating Service
                     </a>
                 </div>
@@ -576,13 +619,13 @@
                 </p>
                 
                 <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-                    <a href="tel:613-732-1319" class="w-full sm:w-auto bg-white text-red-600 px-8 py-4 rounded-full font-bold text-xl hover:bg-yellow-300 transition-colors shadow-xl flex items-center justify-center gap-2">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="w-full sm:w-auto bg-white text-red-600 px-8 py-4 rounded-full font-bold text-xl hover:bg-yellow-300 transition-colors shadow-xl flex items-center justify-center gap-2">
                         <span>📞</span>
-                        613-732-1319
+                        [CONTACT INFO REMOVED]
                     </a>
-                    <a href="tel:613-401-1048" class="w-full sm:w-auto bg-white/20 backdrop-blur border-2 border-white text-white px-8 py-4 rounded-full font-bold text-xl hover:bg-white/30 transition-colors flex items-center justify-center gap-2">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="w-full sm:w-auto bg-white/20 backdrop-blur border-2 border-white text-white px-8 py-4 rounded-full font-bold text-xl hover:bg-white/30 transition-colors flex items-center justify-center gap-2">
                         <span>📞</span>
-                        613-401-1048
+                        [CONTACT INFO REMOVED]
                     </a>
                 </div>
                 

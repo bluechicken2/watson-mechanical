@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Under Construction Banner -->
+<style>
+.construction-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #f59e0b, #d97706, #f59e0b);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 14px;
+    z-index: 99999;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.construction-banner::before {
+    content: "🚧";
+    font-size: 18px;
+}
+.construction-banner::after {
+    content: "🚧";
+    font-size: 18px;
+}
+@keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+}
+body {
+    padding-top: 50px !important;
+}
+</style>
+<div class="construction-banner">
+    Under Construction — Coming Soon!
+</div>
+<!-- End Banner -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Watson Mechanical Ltd. | HVAC & Plumbing Services | Pembroke, ON</title>
@@ -125,8 +168,8 @@
         "description": "Professional HVAC and plumbing services serving the Ottawa Valley since 2004. Specializing in air conditioning, heating, and plumbing solutions for residential and commercial clients.",
         "@id": "https://watsonmechanical.ca",
         "url": "https://watsonmechanical.ca",
-        "telephone": ["+1-613-732-1319", "+1-613-401-1048"],
-        "email": "admin@watsonmechanical.ca",
+        "telephone": ["+1-[CONTACT INFO REMOVED]", "+1-[CONTACT INFO REMOVED]"],
+        "email": "[EMAIL REMOVED]",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "454 Biesenthal Rd",
@@ -182,17 +225,17 @@
                 <span class="font-semibold">24/7 Emergency Service Available</span>
             </div>
             <div class="flex items-center gap-4">
-                <a href="tel:613-732-1319" class="flex items-center gap-1 hover:text-spring-green-light transition-colors">
+                <a href="tel:[CONTACT INFO REMOVED]" class="flex items-center gap-1 hover:text-spring-green-light transition-colors">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                     </svg>
-                    <span class="font-semibold">613-732-1319</span>
+                    <span class="font-semibold">[CONTACT INFO REMOVED]</span>
                 </a>
-                <a href="tel:613-401-1048" class="flex items-center gap-1 hover:text-spring-green-light transition-colors">
+                <a href="tel:[CONTACT INFO REMOVED]" class="flex items-center gap-1 hover:text-spring-green-light transition-colors">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                     </svg>
-                    <span class="font-semibold">613-401-1048</span>
+                    <span class="font-semibold">[CONTACT INFO REMOVED]</span>
                 </a>
             </div>
         </div>
@@ -225,7 +268,7 @@
 
                 <!-- CTA -->
                 <div class="flex items-center gap-3">
-                    <a href="tel:613-732-1319" class="hidden md:flex items-center gap-2 bg-spring-green text-white px-5 py-2.5 rounded-full font-semibold hover:bg-green-600 transition-colors pulse-green">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="hidden md:flex items-center gap-2 bg-spring-green text-white px-5 py-2.5 rounded-full font-semibold hover:bg-green-600 transition-colors pulse-green">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>
@@ -247,11 +290,11 @@
                     <a href="#areas" class="text-gray-600 hover:text-spring-green font-medium py-2">Service Areas</a>
                     <a href="#about" class="text-gray-600 hover:text-spring-green font-medium py-2">About</a>
                     <a href="#contact" class="text-gray-600 hover:text-spring-green font-medium py-2">Contact</a>
-                    <a href="tel:613-732-1319" class="flex items-center justify-center gap-2 bg-spring-green text-white px-5 py-3 rounded-full font-semibold">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="flex items-center justify-center gap-2 bg-spring-green text-white px-5 py-3 rounded-full font-semibold">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>
-                        Call 613-732-1319
+                        Call [CONTACT INFO REMOVED]
                     </a>
                 </div>
             </nav>
@@ -297,7 +340,7 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 mb-10">
-                        <a href="tel:613-732-1319" class="flex items-center justify-center gap-2 bg-spring-green text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-xl">
+                        <a href="tel:[CONTACT INFO REMOVED]" class="flex items-center justify-center gap-2 bg-spring-green text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-xl">
                             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                             </svg>
@@ -368,7 +411,7 @@
                                 </div>
                             </div>
 
-                            <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-spring-green font-semibold hover:text-green-700">
+                            <a href="tel:[CONTACT INFO REMOVED]" class="inline-flex items-center gap-2 text-spring-green font-semibold hover:text-green-700">
                                 Book Your Tune-Up
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -430,7 +473,7 @@
                                 Emergency Repairs
                             </li>
                         </ul>
-                        <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-spring-green font-semibold hover:text-green-700">
+                        <a href="tel:[CONTACT INFO REMOVED]" class="inline-flex items-center gap-2 text-spring-green font-semibold hover:text-green-700">
                             Schedule AC Service
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -478,7 +521,7 @@
                                 Fixture Installation
                             </li>
                         </ul>
-                        <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-spring-blue-dark font-semibold hover:text-cyan-700">
+                        <a href="tel:[CONTACT INFO REMOVED]" class="inline-flex items-center gap-2 text-spring-blue-dark font-semibold hover:text-cyan-700">
                             Schedule Plumbing
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -524,7 +567,7 @@
                                 24/7 Repairs
                             </li>
                         </ul>
-                        <a href="tel:613-732-1319" class="inline-flex items-center gap-2 text-orange-500 font-semibold hover:text-orange-600">
+                        <a href="tel:[CONTACT INFO REMOVED]" class="inline-flex items-center gap-2 text-orange-500 font-semibold hover:text-orange-600">
                             Schedule Heating
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
@@ -727,25 +770,25 @@
                 </p>
 
                 <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
-                    <a href="tel:613-732-1319" class="flex items-center justify-center gap-3 bg-white text-spring-green px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="flex items-center justify-center gap-3 bg-white text-spring-green px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition-all shadow-lg">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>
-                        613-732-1319
+                        [CONTACT INFO REMOVED]
                     </a>
-                    <a href="tel:613-401-1048" class="flex items-center justify-center gap-3 bg-white/20 text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all">
+                    <a href="tel:[CONTACT INFO REMOVED]" class="flex items-center justify-center gap-3 bg-white/20 text-white border-2 border-white px-8 py-4 rounded-full font-bold text-lg hover:bg-white/30 transition-all">
                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>
-                        613-401-1048
+                        [CONTACT INFO REMOVED]
                     </a>
                 </div>
 
-                <a href="mailto:admin@watsonmechanical.ca" class="inline-flex items-center gap-2 text-white/80 hover:text-white font-medium">
+                <a href="mailto:[EMAIL REMOVED]" class="inline-flex items-center gap-2 text-white/80 hover:text-white font-medium">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
-                    admin@watsonmechanical.ca
+                    [EMAIL REMOVED]
                 </a>
             </div>
         </div>
@@ -816,15 +859,15 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                             </svg>
                             <div>
-                                <a href="tel:613-732-1319" class="hover:text-spring-green transition-colors">613-732-1319</a><br>
-                                <a href="tel:613-401-1048" class="hover:text-spring-green transition-colors">613-401-1048</a>
+                                <a href="tel:[CONTACT INFO REMOVED]" class="hover:text-spring-green transition-colors">[CONTACT INFO REMOVED]</a><br>
+                                <a href="tel:[CONTACT INFO REMOVED]" class="hover:text-spring-green transition-colors">[CONTACT INFO REMOVED]</a>
                             </div>
                         </li>
                         <li class="flex items-center gap-3">
                             <svg class="w-5 h-5 text-spring-green flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                             </svg>
-                            <a href="mailto:admin@watsonmechanical.ca" class="hover:text-spring-green transition-colors">admin@watsonmechanical.ca</a>
+                            <a href="mailto:[EMAIL REMOVED]" class="hover:text-spring-green transition-colors">[EMAIL REMOVED]</a>
                         </li>
                     </ul>
                 </div>
